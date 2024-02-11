@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Figtree', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+    }
+    .card {
+      background-color: white;
+      border-radius: 1rem;
+      max-width: 336px;
+      padding: 1rem;
+      box-shadow: 10px 10px 0px 0px black;
+      margin: 0 3rem 0 2.5rem;
+    }
+    .illustration {
+      display: inline;
+      border-radius: .75rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .status {
+      background-color: hsl(47, 88%, 63%);
+      width: fit-content;
+      padding: .4rem .75rem;
+      border-radius: .25rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      font-size: .9rem;
+    }
+    .publishment-date {
+      font-size: .86rem;
+    }
+    .title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      transition: .15s;
+    }
+    .title:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    .paragraph {
+      color: hsl(0, 0%, 50%);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+    .author-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .author-img {
+      width: 10%;
+    }
+    .author-name {
+      font-weight: 800;
+    }
+    @media only screen and (max-width: 398px) {
+      .status, .publishment-date, .title, .paragraph {
+        text-align: center;
+      }
+      .status-container {
+        display: flex;
+        justify-content: center;
+      }
+      .status {
+        width: 75%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="illustration-container">
+      <img class="illustration" src="assets/images/illustration-article.svg" alt="illustration-article">
+    </div>
+    <div class="status-container">
+      <div class="status">Learning</div>
+    </div>
+    <div class="publishment-date-container">
+      <div class="publishment-date">Published 21 Dec 2023</div>
+    </div>
+    <div class="title-container">
+      <div class="title">HTML & CSS foundations</div>
+    </div>
+    <div class="paragraph-container">
+      <div class="paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</div>
+    </div>
+    <div class="author-container">
+      <img class="author-img" src="assets/images/image-avatar.webp" alt="author-img">
+      <div class="author-name">Greg Hooper</div>
+    </div>
+  </div>
+</body>
+</html>
